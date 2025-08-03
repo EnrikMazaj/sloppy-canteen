@@ -45,7 +45,7 @@ export default function MenuPage() {
                           <span className="text-lg font-bold text-[#4CD3A9]">{item.price}</span>
                         </div>
                       </div>
-                      <p className="text-gray-600 mb-4">{item.description}</p>
+                      <p className="text-gray-800 mb-4">{item.description}</p>
                       <button 
                         onClick={() => handleAddToCart(item)}
                         className="bg-[#4CD3A9] text-black px-4 py-2 rounded-md font-medium hover:bg-opacity-90 transition-colors"

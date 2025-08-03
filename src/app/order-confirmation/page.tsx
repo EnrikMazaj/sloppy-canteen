@@ -65,7 +65,7 @@ export default function OrderConfirmationPage() {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#4CD3A9] mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading order details...</p>
+          <p className="text-gray-800">Loading order details...</p>
         </div>
       </div>
     );
@@ -83,7 +83,7 @@ export default function OrderConfirmationPage() {
           <div className="bg-white rounded-lg shadow-md p-8 text-center mb-8">
             <div className="text-6xl mb-4">✅</div>
             <h1 className="text-3xl font-bold text-green-600 mb-2">Order Confirmed!</h1>
-            <p className="text-xl text-gray-600 mb-4">
+            <p className="text-xl text-gray-800 mb-4">
               Thank you, {orderSummary.customerInfo.firstName}!
             </p>
             <div className="bg-[#4CD3A9] text-black p-4 rounded-lg">
@@ -134,7 +134,7 @@ export default function OrderConfirmationPage() {
                 <div key={item.id} className="flex justify-between items-start border-b pb-3">
                   <div className="flex-1">
                     <h4 className="font-medium">{item.name}</h4>
-                    <p className="text-sm text-gray-600">Quantity: {item.quantity}</p>
+                    <p className="text-sm text-gray-800">Quantity: {item.quantity}</p>
                     {(item.spicy || item.vegetarian) && (
                       <div className="flex mt-1">
                         {item.spicy && <span className="text-red-500 text-xs mr-1" title="Spicy">🌶️</span>}
@@ -172,21 +172,21 @@ export default function OrderConfirmationPage() {
                 <span className="text-2xl mr-3">👨‍🍳</span>
                 <div>
                   <p className="font-medium">We&apos;re preparing your order</p>
-                  <p className="text-sm text-gray-600">Our kitchen team will start working on your order right away.</p>
+                                      <p className="text-sm text-gray-800">Our kitchen team will start working on your order right away.</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="text-2xl mr-3">⏰</span>
                 <div>
                   <p className="font-medium">Estimated pickup time: 15-20 minutes</p>
-                  <p className="text-sm text-gray-600">We&apos;ll have your order ready for pickup soon!</p>
+                                      <p className="text-sm text-gray-800">We&apos;ll have your order ready for pickup soon!</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="text-2xl mr-3">💳</span>
                 <div>
                   <p className="font-medium">Payment at pickup</p>
-                  <p className="text-sm text-gray-600">Pay when you arrive. We accept cash and all major cards.</p>
+                                      <p className="text-sm text-gray-800">Pay when you arrive. We accept cash and all major cards.</p>
                 </div>
               </div>
             </div>

@@ -51,7 +51,7 @@ export default function CheckoutPage() {
         <div className="text-center">
           <div className="text-6xl mb-4">🛒</div>
           <h1 className="text-2xl font-bold mb-4">Your cart is empty</h1>
-          <p className="text-gray-600 mb-6">Add some items to your cart before checkout!</p>
+          <p className="text-gray-800 mb-6">Add some items to your cart before checkout!</p>
           <Link
             href="/menu"
             className="bg-[#4CD3A9] text-black px-6 py-3 rounded-md font-medium hover:bg-opacity-90"
@@ -275,7 +275,7 @@ export default function CheckoutPage() {
                   <div key={item.id} className="flex justify-between items-start">
                     <div className="flex-1">
                       <h4 className="font-medium">{item.name}</h4>
-                      <p className="text-sm text-gray-600">Qty: {item.quantity} × ${parseFloat(item.price.replace('$', '')).toFixed(2)}</p>
+                      <p className="text-sm text-gray-800">Qty: {item.quantity} × ${parseFloat(item.price.replace('$', '')).toFixed(2)}</p>
                       {(item.spicy || item.vegetarian) && (
                         <div className="flex mt-1">
                           {item.spicy && <span className="text-red-500 text-xs mr-1">🌶️</span>}

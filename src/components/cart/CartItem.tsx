@@ -23,7 +23,7 @@ export default function CartItem({ item }: CartItemProps) {
         <h4 className="text-sm font-medium text-gray-900 truncate">
           {item.name}
         </h4>
-        <p className="text-sm text-gray-500">{item.price} each</p>
+        <p className="text-sm text-gray-700">{item.price} each</p>
         <div className="flex items-center mt-1">
           {item.spicy && <span className="text-red-500 text-xs mr-1" title="Spicy">🌶️</span>}
           {item.vegetarian && <span className="text-green-500 text-xs" title="Vegetarian">🌱</span>}

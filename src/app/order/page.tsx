@@ -96,7 +96,7 @@ export default function OrderPage() {
                         <span className="text-lg font-bold text-[#4CD3A9]">{item.price}</span>
                       </div>
                     </div>
-                    <p className="text-gray-600 mb-4">{item.description}</p>
+                    <p className="text-gray-800 mb-4">{item.description}</p>
                     <button 
                       onClick={() => handleAddToCart(item)}
                       className="w-full bg-[#4CD3A9] text-black px-4 py-2 rounded-md font-medium hover:bg-opacity-90 transition-colors"
@@ -129,7 +129,7 @@ export default function OrderPage() {
                             <span className="text-lg font-bold text-[#4CD3A9]">{item.price}</span>
                           </div>
                         </div>
-                        <p className="text-gray-600 mb-4">{item.description}</p>
+                        <p className="text-gray-800 mb-4">{item.description}</p>
                         <button 
                           onClick={() => handleAddToCart(item)}
                           className="w-full bg-[#4CD3A9] text-black px-4 py-2 rounded-md font-medium hover:bg-opacity-90 transition-colors"
@@ -171,7 +171,7 @@ export default function OrderPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold mb-4">Downtown Location</h3>
-              <p className="text-gray-600 mb-4">123 Main Street</p>
+              <p className="text-gray-800 mb-4">123 Main Street</p>
               <div className="bg-[#4CD3A9] text-black p-4 rounded-lg mb-4">
                 <p className="font-bold text-lg">(555) 123-4567</p>
               </div>
@@ -180,7 +180,7 @@ export default function OrderPage() {
             
             <div className="bg-gray-50 rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold mb-4">Westside Location</h3>
-              <p className="text-gray-600 mb-4">456 West Avenue</p>
+              <p className="text-gray-800 mb-4">456 West Avenue</p>
               <div className="bg-[#4CD3A9] text-black p-4 rounded-lg mb-4">
                 <p className="font-bold text-lg">(555) 234-5678</p>
               </div>
@@ -189,7 +189,7 @@ export default function OrderPage() {
             
             <div className="bg-gray-50 rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold mb-4">Eastside Location</h3>
-              <p className="text-gray-600 mb-4">789 East Boulevard</p>
+              <p className="text-gray-800 mb-4">789 East Boulevard</p>
               <div className="bg-[#4CD3A9] text-black p-4 rounded-lg mb-4">
                 <p className="font-bold text-lg">(555) 345-6789</p>
               </div>

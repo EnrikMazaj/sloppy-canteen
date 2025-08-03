@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ProductSlideshow from "@/components/ui/ProductSlideshow";
 
 export default function Home() {
   return (
@@ -34,54 +35,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Items */}
+      {/* Featured Products Slideshow */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Featured Menu Items</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Featured Item 1 */}
-            <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
-              <div className="h-64 relative bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
-                <div className="text-6xl">🍔</div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">The Classic Sloppy</h3>
-                <p className="text-gray-600 mb-4">Our signature burger with special sauce, lettuce, cheese, pickles, onions on a sesame seed bun.</p>
-                <Link href="/menu" className="text-[#4CD3A9] font-medium hover:underline">
-                  Order Now →
-                </Link>
-              </div>
-            </div>
-            
-            {/* Featured Item 2 */}
-            <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
-              <div className="h-64 relative bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
-                <div className="text-6xl">🥪</div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Chicken Deluxe</h3>
-                <p className="text-gray-600 mb-4">Crispy chicken breast, avocado, bacon, lettuce, and honey mustard on a brioche bun.</p>
-                <Link href="/menu" className="text-[#4CD3A9] font-medium hover:underline">
-                  Order Now →
-                </Link>
-              </div>
-            </div>
-            
-            {/* Featured Item 3 */}
-            <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
-              <div className="h-64 relative bg-gradient-to-br from-red-400 to-yellow-500 flex items-center justify-center">
-                <div className="text-6xl">🍟</div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Loaded Fries</h3>
-                <p className="text-gray-600 mb-4">Crispy fries topped with cheese sauce, bacon bits, green onions, and sour cream.</p>
-                <Link href="/menu" className="text-[#4CD3A9] font-medium hover:underline">
-                  Order Now →
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductSlideshow />
         </div>
       </section>
 
@@ -94,7 +52,7 @@ export default function Home() {
             {/* Location 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-2">Downtown</h3>
-              <p className="text-gray-600 mb-4">123 Main Street<br />City, State 12345</p>
+              <p className="text-gray-800 mb-4">123 Main Street<br />City, State 12345</p>
               <p className="mb-4"><strong>Hours:</strong><br />Mon-Fri: 10am - 10pm<br />Sat-Sun: 11am - 11pm</p>
               <Link href="/locations" className="text-[#4CD3A9] font-medium hover:underline">
                 View Details →
@@ -104,7 +62,7 @@ export default function Home() {
             {/* Location 2 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-2">Westside</h3>
-              <p className="text-gray-600 mb-4">456 West Avenue<br />City, State 12345</p>
+              <p className="text-gray-800 mb-4">456 West Avenue<br />City, State 12345</p>
               <p className="mb-4"><strong>Hours:</strong><br />Mon-Fri: 10am - 10pm<br />Sat-Sun: 11am - 11pm</p>
               <Link href="/locations" className="text-[#4CD3A9] font-medium hover:underline">
                 View Details →
@@ -114,7 +72,7 @@ export default function Home() {
             {/* Location 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-2">Eastside</h3>
-              <p className="text-gray-600 mb-4">789 East Boulevard<br />City, State 12345</p>
+              <p className="text-gray-800 mb-4">789 East Boulevard<br />City, State 12345</p>
               <p className="mb-4"><strong>Hours:</strong><br />Mon-Fri: 10am - 10pm<br />Sat-Sun: 11am - 11pm</p>
               <Link href="/locations" className="text-[#4CD3A9] font-medium hover:underline">
                 View Details →

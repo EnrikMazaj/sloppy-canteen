@@ -57,7 +57,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
             <div className="flex flex-col items-center justify-center h-full px-4 text-center">
               <div className="text-6xl mb-4">🛒</div>
               <h3 className="text-lg font-medium text-gray-900 mb-2">Your cart is empty</h3>
-              <p className="text-gray-500 mb-6">Add some delicious items from our menu!</p>
+              <p className="text-gray-800 mb-6">Add some delicious items from our menu!</p>
               <button
                 onClick={handleContinueShopping}
                 className="bg-[#4CD3A9] text-black px-6 py-2 rounded-md font-medium hover:bg-opacity-90 transition-colors"
