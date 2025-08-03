@@ -1,103 +1,149 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      {/* Hero Section */}
+      <section className="relative h-[70vh] flex items-center">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black z-10"></div>
+        <div className="relative z-20 container mx-auto px-4">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+              Deliciously Sloppy.<br />Perfectly Satisfying.
+            </h1>
+            <p className="text-xl text-white/90 mb-8">
+              Handcrafted burgers, sandwiches, and more at our 3 locations with a 4th coming soon!
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/menu" className="bg-[#4CD3A9] text-black px-6 py-3 rounded-md font-medium text-lg hover:bg-opacity-90">
+                View Menu
+              </Link>
+              <Link href="/locations" className="bg-white text-black px-6 py-3 rounded-md font-medium text-lg hover:bg-opacity-90">
+                Find Us
+              </Link>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="absolute inset-0 -z-10">
+          {/* Placeholder background with food pattern */}
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-800 to-gray-900" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234CD3A9' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}></div>
+        </div>
+      </section>
+
+      {/* Featured Items */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Featured Menu Items</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Featured Item 1 */}
+            <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+              <div className="h-64 relative bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                <div className="text-6xl">🍔</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">The Classic Sloppy</h3>
+                <p className="text-gray-600 mb-4">Our signature burger with special sauce, lettuce, cheese, pickles, onions on a sesame seed bun.</p>
+                <Link href="/menu" className="text-[#4CD3A9] font-medium hover:underline">
+                  Order Now →
+                </Link>
+              </div>
+            </div>
+            
+            {/* Featured Item 2 */}
+            <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+              <div className="h-64 relative bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                <div className="text-6xl">🥪</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Chicken Deluxe</h3>
+                <p className="text-gray-600 mb-4">Crispy chicken breast, avocado, bacon, lettuce, and honey mustard on a brioche bun.</p>
+                <Link href="/menu" className="text-[#4CD3A9] font-medium hover:underline">
+                  Order Now →
+                </Link>
+              </div>
+            </div>
+            
+            {/* Featured Item 3 */}
+            <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+              <div className="h-64 relative bg-gradient-to-br from-red-400 to-yellow-500 flex items-center justify-center">
+                <div className="text-6xl">🍟</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Loaded Fries</h3>
+                <p className="text-gray-600 mb-4">Crispy fries topped with cheese sauce, bacon bits, green onions, and sour cream.</p>
+                <Link href="/menu" className="text-[#4CD3A9] font-medium hover:underline">
+                  Order Now →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Locations Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Locations</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Location 1 */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold mb-2">Downtown</h3>
+              <p className="text-gray-600 mb-4">123 Main Street<br />City, State 12345</p>
+              <p className="mb-4"><strong>Hours:</strong><br />Mon-Fri: 10am - 10pm<br />Sat-Sun: 11am - 11pm</p>
+              <Link href="/locations" className="text-[#4CD3A9] font-medium hover:underline">
+                View Details →
+              </Link>
+            </div>
+            
+            {/* Location 2 */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold mb-2">Westside</h3>
+              <p className="text-gray-600 mb-4">456 West Avenue<br />City, State 12345</p>
+              <p className="mb-4"><strong>Hours:</strong><br />Mon-Fri: 10am - 10pm<br />Sat-Sun: 11am - 11pm</p>
+              <Link href="/locations" className="text-[#4CD3A9] font-medium hover:underline">
+                View Details →
+              </Link>
+            </div>
+            
+            {/* Location 3 */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold mb-2">Eastside</h3>
+              <p className="text-gray-600 mb-4">789 East Boulevard<br />City, State 12345</p>
+              <p className="mb-4"><strong>Hours:</strong><br />Mon-Fri: 10am - 10pm<br />Sat-Sun: 11am - 11pm</p>
+              <Link href="/locations" className="text-[#4CD3A9] font-medium hover:underline">
+                View Details →
+              </Link>
+            </div>
+            
+            {/* Location 4 - Coming Soon */}
+            <div className="bg-[#4CD3A9] p-6 rounded-lg shadow-md text-black">
+              <h3 className="text-xl font-bold mb-2">Northside</h3>
+              <p className="mb-4">1010 North Road<br />City, State 12345</p>
+              <p className="text-lg font-bold mb-4">Coming Soon!</p>
+              <Link href="/locations" className="text-black font-medium hover:underline">
+                Learn More →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-black text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Order?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">Skip the line and order ahead for pickup or delivery.</p>
+          <Link href="/order" className="bg-[#4CD3A9] text-black px-8 py-4 rounded-md font-medium text-lg inline-block hover:bg-opacity-90">
+            Order Now
+          </Link>
     </div>
+      </section>
+    </>
   );
 }

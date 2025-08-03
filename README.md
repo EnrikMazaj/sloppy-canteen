@@ -1,6 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sloppy Canteen
 
-## Getting Started
+<!-- Logo placeholder - Add actual logo image here when available -->
+
+## About Sloppy Canteen
+
+Sloppy Canteen is a fast food restaurant chain specializing in delicious burgers, sandwiches, and other quick-service food items. Currently operating in 3 locations with a 4th store coming soon!
+
+### Our Concept
+
+Sloppy Canteen offers high-quality, flavorful fast food in a casual dining environment. Our menu features:
+- Signature burgers
+- Specialty sandwiches
+- Side dishes
+- Beverages
+
+### Locations
+
+1. Location #1
+2. Location #2
+3. Location #3
+4. Coming soon: Location #4
+
+## Website Development
+
+This website is built using [Next.js](https://nextjs.org), a React framework for production-grade applications.
+
+### Getting Started
 
 First, run the development server:
 
@@ -16,21 +41,37 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app`: Main application pages and components
+- `public`: Static assets including images and icons
+- `src/components`: Reusable UI components
+- `src/styles`: CSS and styling files
 
-## Learn More
+### Key Features to Implement
 
-To learn more about Next.js, take a look at the following resources:
+- Homepage with featured menu items
+- Online ordering system
+- Store locator with maps
+- Menu page with categories and item details
+- Contact form
+- About us page
+- Promotions and special offers
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design Guidelines
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Primary color: Mint Green (#4CD3A9)
+- Secondary color: Black (#000000)
+- Font: [Font Name] for headings, [Font Name] for body text
+- Rustic, casual aesthetic with modern elements
 
-## Deploy on Vercel
+## Development Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Mobile-first responsive design
+- Optimize images for fast loading
+- Implement SEO best practices
+- Ensure accessibility compliance
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built with ❤️ using [Next.js](https://nextjs.org)
