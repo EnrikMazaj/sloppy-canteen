@@ -75,3 +75,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ---
 
 Built with ❤️ using [Next.js](https://nextjs.org)
+
+
+
+notes:
+Add real images - Replace emoji placeholders with actual food photography
+Implement online ordering system - Build the cart and checkout functionality
+Add interactive maps - Integrate Google Maps for the locations page
+Set up a CMS - For easy menu and content management
+Add animations - Smooth transitions and micro-interactions
